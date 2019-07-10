@@ -11,3 +11,5 @@ tmp/**/*
 *.exe
 *.test
 *.prof
+*.backup
+*.retry
