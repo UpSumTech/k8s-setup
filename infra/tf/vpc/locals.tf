@@ -1,6 +1,6 @@
 locals {
   region   = "ca-central-1"
-  cluster  = "sumanmukherjeetech"
+  cluster  = "${var.cluster_name}"
   vpc_cidr = "10.1.0.0/16"
 
   azs = [
