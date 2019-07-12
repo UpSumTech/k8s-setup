@@ -14,3 +14,5 @@ tmp/**/*
 *.backup
 *.retry
 *.tfvars
+*.lock
+*.lock.info
