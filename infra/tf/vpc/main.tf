@@ -1,11 +1,11 @@
 module "k8s_vpc" {
   source                 = "terraform-aws-modules/vpc/aws"
-  version                = "~> v1.0"
+  version                = "~> v2.0"
   name                   = "k8s_vpc"
   cidr                   = "${local.vpc_cidr}"
-  azs                    = ["${local.azs}"]
-  private_subnets        = ["${local.vpc_private_subnets}"]
-  public_subnets         = ["${local.vpc_public_subnets}"]
+  azs                    = "${local.azs}"
+  private_subnets        = "${local.vpc_private_subnets}"
+  public_subnets         = "${local.vpc_public_subnets}"
   enable_dns_hostnames   = true
   enable_nat_gateway     = true
   single_nat_gateway     = true

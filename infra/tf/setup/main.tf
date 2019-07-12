@@ -6,7 +6,7 @@ resource "aws_s3_bucket" "k8s_tf_state" {
   bucket = "suman-mukherjee-k8s-tf-state"
   acl    = "private"
 
-  tags {
+  tags = {
     managed_by = "terraform"
   }
 }
@@ -22,7 +22,7 @@ resource "aws_dynamodb_table" "k8s_tf_state_locks" {
     type = "S"
   }
 
-  tags {
+  tags = {
     managed_by = "terraform"
   }
 }

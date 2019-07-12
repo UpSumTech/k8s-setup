@@ -10,7 +10,7 @@ resource "aws_security_group" "http_ingress" {
     from_port   = 80
     protocol    = "tcp"
     to_port     = 80
-    cidr_blocks = ["${local.vpc_public_subnets}"]
+    cidr_blocks = "${local.vpc_public_subnets}"
   }
 }
 
@@ -26,6 +26,6 @@ resource "aws_security_group" "https_ingress" {
     from_port   = 443
     protocol    = "tcp"
     to_port     = 443
-    cidr_blocks = ["${local.vpc_public_subnets}"]
+    cidr_blocks = "${local.vpc_public_subnets}"
   }
 }
