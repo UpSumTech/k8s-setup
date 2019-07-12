@@ -61,3 +61,7 @@ output "k8s_sg_https_ingress_id" {
 output "kops_state_s3_bucket" {
   value = "${aws_s3_bucket.kops_state.bucket}"
 }
+
+output "k8s_cluster_name" {
+  value = "${local.cluster}"
+}
