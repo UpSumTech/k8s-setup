@@ -1,5 +1,5 @@
 output "region" {
-  value = ["${local.region}"]
+  value = "${local.region}"
 }
 
 output "availability_zones" {
