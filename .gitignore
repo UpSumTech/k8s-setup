@@ -13,3 +13,4 @@ tmp/**/*
 *.prof
 *.backup
 *.retry
+*.tfvars
